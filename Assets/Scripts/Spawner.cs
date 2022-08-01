@@ -34,13 +34,3 @@ public class Spawner : MonoBehaviour
     }
 }
 
-
- /* This is instantiating a random obstacle pattern from the obstaclePatterns array at the
-    position of the spawner. It is also setting the time between spawns to the start time
-            between
-            spawns. */
-            
-            /* This is checking if the start time between spawns is greater than the minimum time. If
-            it is, it is decreasing the start time between spawns by the decrease time. */
-            
-            /* This is decreasing the time between spawns by the time between frames. */

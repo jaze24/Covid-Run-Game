@@ -25,13 +25,12 @@ public class Player : MonoBehaviour {
          healthDisplay.text = "Health : " + health.ToString();
          
        
-        /* This is checking if the health of the player is less than or equal to 0. If it is, then the
-               scene will reload. */
+    
         if (health <= 0) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        /* This is moving the player towards the target position. */
+    
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
         
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight) {
